@@ -1,13 +1,14 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\Models\Curso;
 use Illuminate\Http\Request;
 
 class CursoController extends Controller
 {
     public function index (){
-        return view('cursos.index');
+        $curso = Curso::all();
+        return view('cursos.index',compact('curso'));
     }
     public function create (){
         return view('cursos.create');
