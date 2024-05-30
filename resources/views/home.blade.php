@@ -19,7 +19,7 @@
 
 <body class="bg-dark">
     <div id="encabezado">
-        <h1>Yamaha Motorcycle's</h1>
+        <h1>Yamaha Motorcycle</h1>
     </div>
 
     <section class="slider-container">
