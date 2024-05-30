@@ -40,11 +40,6 @@
         </div>
     </section>
 
-    <?php
-include "conexion.php";
-    ?>
-
-
     <div class="row d-flex justify-content-center">
         <div class="col-8 p-4">
             <table class="table table-hover table-dark">
@@ -59,37 +54,22 @@ include "conexion.php";
                     </tr>
                 </thead>
                 <tbody>
-                    <?php
-include "conexion.php";
-$sql = $conexion->query(" SELECT * FROM motos");
-while ($resultado = $sql->fetch_object()) { ?>
-                    <tr>
-                        <td>
-                            <?= $resultado->id ?>
-                        </td>
-                        <td>
-                            <?= $resultado->modelo ?>
-                        </td>
-                        <td>
-                            <?= $resultado->año ?>
-                        </td>
-                        <td>
-                            <?= $resultado->cilindraje ?>
-                        </td>
-                        <td>
-                            <?= $resultado->descripcion ?>
-                        </td>
-                        <td> </td>
-                        <td><a href="edit.php" class="btn btn-small btn-warning"><i
-                                    class="fa-solid fa-pen-to-square"></i></a></td>
+                        <tr>
+                            <td><?= $resultado->id ?></td>
+                            <td><?= $resultado->modelo ?></td>
+                            <td><?= $resultado->año ?></td>
+                            <td><?= $resultado->cilindraje ?></td>
+                            <td><?= $resultado->descripcion ?></td>
+                            <td> </td>
+                            <td><a href="edit.php" class="btn btn-small btn-warning"><i
+                                        class="fa-solid fa-pen-to-square"></i></a></td>
 
-                        <td><a href="" class="btn btn-small btn-danger"><i class="fa-solid fa-trash"></i></a></td>
-                        <td><a href="create.php" class="btn btn-small btn-info"><i
-                                    class="fa-solid fa-square-plus"></i></button></a></td>
+                            <td><a href="" class="btn btn-small btn-danger"><i class="fa-solid fa-trash"></i></a></td>
+                            <td><a href="create.php" class="btn btn-small btn-info"><i
+                                        class="fa-solid fa-square-plus"></i></button></a></td>
 
-                    </tr>
-                    <?php }
-                    ?>
+                        </tr>
+                   
 
 
                 </tbody>
@@ -102,4 +82,7 @@ while ($resultado = $sql->fetch_object()) { ?>
 </body>
 
 </html>
+
 @endsection
+
+
