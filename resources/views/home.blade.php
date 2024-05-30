@@ -1,6 +1,6 @@
 @extends('layouts.plantilla')
 
-@section('title','home')
+@section('title', 'home')
 
 @section('content')
 <!DOCTYPE html>
@@ -18,9 +18,21 @@
 </head>
 
 <body class="bg-dark">
-    <div id="encabezado">
-        <h1>Yamaha Motorcycle</h1>
-    </div>
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand text-dark font-weight-light" href="#">Yamaha Motorcyle's</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link active text-dark" aria-current="page" href="">Inicio</a>
+                    <a class="nav-link active text-dark" aria-current="page" href="create">Agregar</a>
+                </div>
+            </div>
+        </div>
+    </nav>
 
     <section class="slider-container">
         <div class="slider-item">
@@ -40,7 +52,7 @@
         </div>
     </section>
 
-    
+
 
     <div class="row d-flex justify-content-center">
         <div class="col-8 p-4">
@@ -56,23 +68,22 @@
                     </tr>
                 </thead>
                 <tbody>
-                    
-                        <tr>
-                            <td>01</td>
-                            <td>MT-03</td>
-                            <td>2024</td>
-                            <td>390</td>
-                            <td>Chimba de moto</td>
-                            <td> </td>
-                            <td><a href="edit.php" class="btn btn-small btn-warning"><i
-                                        class="fa-solid fa-pen-to-square"></i></a></td>
 
-                            <td><a href="" class="btn btn-small btn-danger"><i class="fa-solid fa-trash"></i></a></td>
-                            <td><a href="create.php" class="btn btn-small btn-info"><i
-                                        class="fa-solid fa-square-plus"></i></button></a></td>
+                    <tr>
+                        <td>01</td>
+                        <td>MT-07</td>
+                        <td>2024</td>
+                        <td>689</td>
+                        <td>Chimba de moto</td>
+                        <td> </td>
+                        <td><a href="edit.php" class="btn btn-small btn-warning"><i
+                                    class="fa-solid fa-pen-to-square"></i></a></td>
 
-                        </tr>
-                  
+                        <td><a href="" class="btn btn-small btn-danger"><i class="fa-solid fa-trash"></i></a></td>
+
+
+                    </tr>
+
 
 
                 </tbody>
@@ -87,5 +98,3 @@
 </html>
 
 @endsection
-
-
