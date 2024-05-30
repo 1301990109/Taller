@@ -58,11 +58,11 @@
                 <tbody>
                     
                         <tr>
-                            <td><?= $resultado->id ?></td>
-                            <td><?= $resultado->modelo ?></td>
-                            <td><?= $resultado->año ?></td>
-                            <td><?= $resultado->cilindraje ?></td>
-                            <td><?= $resultado->descripcion ?></td>
+                            <td>01</td>
+                            <td>MT-03</td>
+                            <td>2024</td>
+                            <td>390</td>
+                            <td>Chimba de moto</td>
                             <td> </td>
                             <td><a href="edit.php" class="btn btn-small btn-warning"><i
                                         class="fa-solid fa-pen-to-square"></i></a></td>
