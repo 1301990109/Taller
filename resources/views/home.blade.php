@@ -1,6 +1,6 @@
 @extends('layouts.plantilla')
 
-@section('title', 'home')
+@section('title','home')
 
 @section('content')
 <!DOCTYPE html>
@@ -40,6 +40,11 @@
         </div>
     </section>
 
+    <?php
+    include "conexion.php";
+    ?>
+
+
     <div class="row d-flex justify-content-center">
         <div class="col-8 p-4">
             <table class="table table-hover table-dark">
@@ -54,6 +59,10 @@
                     </tr>
                 </thead>
                 <tbody>
+                    <?php
+                    include "conexion.php";
+                    $sql = $conexion->query(" SELECT * FROM motos");
+                    while ($resultado = $sql->fetch_object()) { ?>
                         <tr>
                             <td><?= $resultado->id ?></td>
                             <td><?= $resultado->modelo ?></td>
@@ -69,7 +78,8 @@
                                         class="fa-solid fa-square-plus"></i></button></a></td>
 
                         </tr>
-                   
+                    <?php }
+                    ?>
 
 
                 </tbody>
